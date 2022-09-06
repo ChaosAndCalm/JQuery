@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../CSS/head.css" />
+    <title>JQuery Crash Course | Selectors</title>
+  </head>
+  <body>
+    <div id="headertag">
+      <h1>JQuery Crash Course</h1>
+    </div>
+    <div id="container">
+      <h1 id="heading1">Heading One</h1>
+      <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam
+        dolorem totam, <span>minima nisi facere</span> similique ex quaerat
+        corporis deleniti atque optio cupiditate ipsam! Hic tempore itaque
+        quaerat nemo nam?
+      </p>
+
+      <h1 class="heading2">Heading Two</h1>
+      <p class="para2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam
+        dolorem totam, minima nisi facere similique ex quaerat corporis deleniti
+        atque optio cupiditate ipsam! Hic tempore itaque quaerat nemo nam?
+      </p>
+
+      <ul id="list">
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ul>
+
+      <input type="button" value="Button 1" />
+      <input type="submit" value="Button 2" />
+      <input type="text" />
+
+      <a href="http://google.co.in">Google</a>
+      <a href="http://yahoo.co.in">Yahoo</a>
+    </div>
+
+    <script>
+      //$("h1.heading2").hide();
+      // $("h1#heading1").hide();
+      //$('p span').css('color','red');
+
+      //$("ul#list li:first").css("color", "pink");
+      //$("ul#list li:last").css("color", "blue");
+      //$("ul#list li:even").css("background-color", "brown");
+      //$(":submit").hide();
+      //$("[href]").css("color", "red");
+      $('a[href = "http://yahoo.co.in"]').css("color", "green");
+    </script>
+  </body>
+</html>

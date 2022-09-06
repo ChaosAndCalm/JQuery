@@ -1,0 +1,27 @@
+#top-heading {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#container {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+#buttons {
+  margin-top: 15px;
+}
+
+#firstBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form label {
+  display: inline-block;
+  margin-top: 20px;
+}
